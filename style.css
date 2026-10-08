@@ -1,0 +1,412 @@
+:root {
+    --bg: #f8f3ea;
+    --paper: #fffaf2;
+    --brown: #3b2920;
+    --gold: #b8860b;
+    --gold-dark: #8f6808;
+    --warm: #ead8bd;
+    --text: #3b2a20;
+    --muted: #6b5b4d;
+    --deep: #6b4226;
+    --shadow: #0002;
+    --shadow-strong: #0003;
+    --line: #e0cdb4;
+}
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+}
+button {
+    background: var(--gold);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+button:hover {
+    background: var(--gold-dark);
+    transform: translateY(-2px);
+}
+header {
+    position: relative;
+    background: var(--brown);
+    color: #fffaf2;
+    text-align: center;
+    padding: 20px;
+}
+header h1 {
+    margin: 5px;
+    font-size: 30px;
+}
+nav {
+    margin-top: 15px;
+}
+nav a {
+    color: #fffaf2;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+}
+nav a:hover {
+    color: #d4af37;
+}
+.hero {
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+    padding: 70px 8%;
+    background: linear-gradient(135deg, var(--warm), var(--bg));
+}
+.hero-text {
+    max-width: 550px;
+    text-align: left;
+}
+.label {
+    display: inline-block;
+    background: var(--gold);
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 700;
+}
+.hero h2 {
+    font-size: 45px;
+    line-height: 1.15;
+    margin: 20px 0;
+}
+.hero h2 span {
+    color: var(--gold);
+}
+.hero p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #5b493b;
+}
+.hero-image {
+    position: relative;
+    width: 400px;
+}
+.hero-image img {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px #0004;
+}
+.floating-card {
+    position: absolute;
+    bottom: 20px;
+    left: -20px;
+    background: #fff;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px var(--shadow-strong);
+    font-weight: 700;
+}
+.cta {
+    font-size: 17px;
+    padding: 14px 25px;
+    margin-top: 15px;
+}
+.cta-big {
+    font-size: 20px;
+    padding: 16px 35px;
+    font-weight: 700;
+}
+section {
+    padding: 60px 30px;
+    text-align: center;
+}
+section h2 {
+    font-size: 30px;
+    color: var(--brown);
+}
+.section-desc {
+    max-width: 600px;
+    margin: 10px auto 35px;
+    color: var(--muted);
+    line-height: 1.6;
+}
+.usp {
+    background: var(--paper);
+}
+.usp-container,
+.benefit-container,
+.produk,
+.promo,
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.usp-card {
+    width: 250px;
+    padding: 25px;
+    background: var(--bg);
+    border-radius: 12px;
+    border: 1px solid var(--line);
+    transition: 0.3s;
+}
+.usp-card:hover,
+.benefit-card:hover,
+.promo-card:hover,
+.product-card:hover {
+    transform: translateY(-5px);
+}
+.usp-card:hover {
+    box-shadow: 0 8px 20px var(--shadow);
+}
+.icon {
+    font-size: 40px;
+}
+.usp-card h3,
+.benefit-card h3,
+.promo-card h3,
+.product-card h3,
+.modal-box h2 {
+    color: var(--deep);
+}
+.benefits {
+    background: var(--warm);
+}
+.benefit-card {
+    background: var(--paper);
+    width: 240px;
+    padding: 22px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 3px 10px var(--shadow);
+    transition: 0.3s;
+}
+.card,
+.testimonial {
+    background: var(--paper);
+    width: 280px;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid var(--line);
+    box-shadow: 0 3px 10px var(--shadow);
+}
+.product-card {
+    transition: 0.3s;
+}
+.prduct-card:hover {
+    box-shadow: 0 10px 25px #0003;
+}
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.product-card h3 {
+    font-size: 22px;
+}
+.description {
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.5;
+}
+.price {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--gold);
+}
+#promo {
+    background: var(--bg);
+}
+.promo-card {
+    border-top: 5px solid var(--gold);
+    transition: 0.3s;
+}
+.promo-icon {
+    font-size: 40px;
+}
+.promo-card p:not(.promo-price) {
+    color: #2b1f1a;
+}
+.promo-card b {
+    color: #2b1f1a;
+}
+.promo-price {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--gold);
+}
+.promo-button {
+    margin-top: 30px;
+}
+.social-proof {
+    background: var(--paper);
+}
+.testimonial {
+    padding: 25px;
+}
+.stars {
+    color: var(--gold);
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+.testimonial p {
+    font-style: italic;
+    line-height: 1.6;
+}
+.testimonial h4 {
+    color: var(--deep);
+}
+.final-cta {
+    background: var(--brown);
+    color: #fffaf2;
+    padding: 70px 20px;
+}
+.final-cta h2 {
+    color: #fffaf2;
+    font-size: 34px;
+}
+.final-cta p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+footer {
+    background: #281c15;
+    color: #e8d5b5;
+    text-align: center;
+    padding: 18px;
+}
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: #000a;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    z-index: 1000;
+}
+.modal.aktif {
+    display: flex;
+}
+.modal-box {
+    position: relative;
+    background: var(--paper);
+    width: 100%;
+    max-width: 430px;
+    max-height: 90vh;
+    overflow-y: auto;
+    padding: 30px 25px;
+    border-radius: 15px;
+    text-align: center;
+}
+.modal-box h2 {
+    margin-top: 5px;
+}
+.modal-box button {
+    margin: 5px 3px;
+}
+.modal-box .tutup {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    padding: 4px 10px;
+    background: transparent;
+    color: var(--text);
+    font-size: 20px;
+}
+.modal-box .tutup:hover {
+    background: var(--warm);
+    transform: none;
+}
+.modal-box input,
+.modal-box textarea,
+.modal-box select {
+    width: 100%;
+    padding: 11px;
+    margin: 6px 0;
+    border: 1px solid #d6c2ad;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 14px;
+}
+.modal-box textarea {
+    height: 90px;
+    resize: vertical;
+}
+.modal-box input:focus,
+.modal-box textarea:focus,
+.modal-box select:focus {
+    outline: none;
+    border-color: var(--gold);
+}
+.modal-box label {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: 700;
+}
+.modal-box .abu {
+    background: #8a7a6c;
+}
+.modal-box .abu:hover {
+    background: #6e6258;
+}
+.total {
+    font-size: 18px;
+    margin: 18px 0 10px;
+}
+#pilihanPromo,
+#pilihanBiasa {
+    margin-top: 10px;
+}
+#langkahForm {
+    display: none;
+}
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 24px;
+    }
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 20px;
+    }
+    .hero-text {
+        text-align: center;
+    }
+    .hero h2 {
+        font-size: 35px;
+    }
+    .hero p {
+        font-size: 16px;
+    }
+    .hero-image {
+        width: 90%;
+        max-width: 380px;
+    }
+    .floating-card {
+        left: 5px;
+    }
+    section {
+        padding: 45px 20px;
+    }
+}

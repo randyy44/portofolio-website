@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>KueRenyah - Kue Tambang & Sistik</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Kue Renyah Ala Randy</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#keunggulan">Keunggulan</a>
+            <a href="#produk">Produk</a>
+            <a href="#promo">Promo</a>
+            <a href="#testimoni">Testimoni</a>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+
+        <div class="hero-text">
+
+            <span class="label">
+                CAMILAN RENYAH & GURIH
+            </span>
+
+            <h2>
+                Kue Renyah yang Enak,
+                <span>Bikin Nagih!</span>
+            </h2>
+
+            <p>
+                Nikmati Kue Tambang dan Sistik dengan rasa
+                yang lezat, gurih, renyah, dan harga yang
+                ramah di kantong.
+            </p>
+            <button class="cta" onclick="pesan()">
+                Pesan Sekarang
+            </button>
+        </div>
+
+        <div class="hero-image">
+            <img
+                src="sistik.jpg"
+                alt="Sistik"
+            >
+
+        </div>
+    </section>
+    <section class="usp">
+
+        <h2>Kenapa Pilih KueRenyah?</h2>
+
+        <p class="section-desc">
+            Camilan sederhana dengan rasa yang cocok
+            untuk menemani aktivitas sehari-hari.
+        </p>
+
+        <div class="usp-container">
+            <div class="usp-card">
+                <div class="icon">
+                    🔥
+                </div>
+                <h3>Renyah</h3>
+                <p>
+                    Tekstur renyah yang nikmat
+                    untuk camilan kapan saja.
+                </p>
+            </div>
+
+            <div class="usp-card">
+
+                <div class="icon">
+                    😋
+                </div>
+                <h3>Rasa Gurih</h3>
+                <p>
+                    Rasa gurih yang cocok
+                    dinikmati bersama teman dan keluarga.
+                </p>
+            </div>
+
+            <div class="usp-card">
+
+                <div class="icon">
+                    💰
+                </div>
+                <h3>Harga Terjangkau</h3>
+                <p>
+                    Camilan enak dengan harga
+                    yang bersahabat.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="keunggulan" class="benefits">
+
+        <h2>Manfaat & Keunggulan</h2>
+
+        <p class="section-desc">
+            KueRenyah cocok menemani berbagai kegiatan.
+        </p>
+
+        <div class="benefit-container">
+
+            <div class="benefit-card">
+                <h3>🎮 Teman Bermain</h3>
+                <p>
+                    Cocok dinikmati saat bermain game
+                    atau bersantai.
+                </p>
+            </div>
+
+            <div class="benefit-card">
+                <h3>📚 Teman Belajar</h3>
+                <p>
+                    Bisa menjadi camilan saat belajar
+                    dan mengerjakan tugas.
+                </p>
+            </div>
+
+            <div class="benefit-card">
+                <h3>👨‍👩‍👧‍👦 Untuk Keluarga</h3>
+                <p>
+                    Nikmati bersama keluarga
+                    dan teman-teman.
+                </p>
+            </div>
+            
+            <div class="benefit-card">
+                <h3>🎁 Cocok untuk Oleh-Oleh</h3>
+                <p>
+                    Bisa menjadi pilihan camilan
+                    untuk diberikan kepada orang lain.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="produk">
+        <h2>Produk Kami</h2>
+        <p class="section-desc">Pilih camilan favoritmu.</p>
+        <div class="produk" id="produkList"></div>
+    </section>
+
+    <section id="promo">
+        <h2>Promo Spesial</h2>
+        <p class="section-desc">Dapatkan camilan lebih banyak dengan paket promo KueRenyah.</p>
+        <div class="promo" id="promoList"></div>
+    </section>
+
+    <section id="testimoni" class="social-proof">
+        <h2>Kata Pelanggan</h2>
+        <p class="section-desc">
+            Pengalaman pelanggan setelah mencoba KueRenyah.
+        </p>
+
+        <div class="testimonial-container">
+            <div class="testimonial">
+                <div class="stars">
+                    ★★★★★
+                </div>
+                <p>
+                    "Kue Tambangnya renyah dan rasanya
+                    enak. Cocok banget buat camilan."
+                </p>
+                <h4>
+                    — Pelanggan KueRenyah
+                </h4>
+            </div>
+
+            <div class="testimonial">
+                <div class="stars">
+                    ★★★★★
+                </div>
+                <p>
+                    "Sistiknya gurih dan cocok dimakan
+                    sambil santai."
+                </p>
+                <h4>
+                    — Pelanggan KueRenyah
+                </h4>
+
+            </div>
+            <div class="testimonial">
+                <div class="stars">
+                    ★★★★★
+                </div>
+                <p>
+                    "Harganya terjangkau dan pilihan
+                    promonya menarik."
+                </p>
+                <h4>
+                    — Pelanggan KueRenyah
+                </h4>
+            </div>
+        </div>
+    </section>
+
+    <section class="final-cta">
+        <h2>
+            Siap Menikmati KueRenyah?
+        </h2>
+        <p>
+            Pilih kue favoritmu dan pesan sekarang!
+        </p>
+        <button
+            class="cta-big"
+            onclick="pesan()"
+        >
+            PESAN SEKARANG
+        </button>
+
+    </section>
+    <footer>
+        <p>
+            &copy; 2026 KueRenyah
+            | Kue Tambang & Sistik
+        </p>
+    </footer>
+
+    <div id="modalPesan" class="modal">
+        <div class="modal-box">
+            <button
+                class="tutup"
+                onclick="tutupModal()"
+            >
+                ✕
+            </button>
+
+            <div id="langkahJenis">
+                <h2>
+                    Mau pesan yang mana?
+                </h2>
+                <button
+                    onclick="pilihJenis('promo')"
+                >
+                    Pesan Promo
+                </button>
+                <button
+                    onclick="pilihJenis('biasa')"
+                >
+                    Pesan Biasa
+                </button>
+            </div>
+            
+            <form
+                id="langkahForm"
+                onsubmit="kirimPesanan(event)"
+            >
+                <h2 id="judulForm"></h2>
+                <input
+                    type="text"
+                    id="nama"
+                    placeholder="Nama"
+                    required
+                >
+                <input
+                    type="tel"
+                    id="telepon"
+                    placeholder="No. Telepon"
+                    required
+                >
+                <textarea
+                    id="alamat"
+                    placeholder="Alamat lengkap"
+                    required
+                ></textarea>
+                <div id="pilihanBiasa">
+                    <label>
+                        Kue Tambang
+                        (Rp15.000)
+                    </label>
+                    <input
+                        type="number"
+                        id="jumlahTambang"
+                        min="0"
+                        value="0"
+                        oninput="hitungTotal()"
+                    >
+                    <label>
+                        Sistik
+                        (Rp12.000)
+                    </label>
+
+                    <input
+                        type="number"
+                        id="jumlahSistik"
+                        min="0"
+                        value="0"
+                        oninput="hitungTotal()"
+                    >
+
+                </div>
+
+                <div id="pilihanPromo">
+                    <label>
+                        Promo 1:
+                        Beli 2 Tambang Gratis 1 Sistik
+                        (Rp30.000)
+                    </label>
+                    <input
+                        type="number"
+                        id="jumlahPromo1"
+                        min="0"
+                        value="0"
+                        oninput="hitungTotal()"
+                    >
+                    <label>
+                        Promo Akhir Tahun:
+                        Beli 3 Sistik Gratis 2 Tambang
+                        (Rp36.000)
+                    </label>
+                    <input
+                        type="number"
+                        id="jumlahAkhirTahun"
+                        min="0"
+                        value="0"
+                        oninput="hitungTotal()"
+                    >
+                    <label>
+                        Paket Hemat:
+                        Tambang + Sistik
+                        (Rp25.000)
+                    </label>
+
+                    <input
+                        type="number"
+                        id="jumlahHemat"
+                        min="0"
+                        value="0"
+                        oninput="hitungTotal()"
+                    >
+                </div>
+
+                <label for="metodeBayar">Metode Pembayaran</label>
+                <select id="metodeBayar">
+                    <option value="QRIS">QRIS</option>
+                    <option value="E-Wallet">E-Wallet</option>
+                    <option value="COD">COD</option>
+                </select>
+
+                <p class="total">
+                    Total Bayar:
+                    <b id="total">
+                        Rp0
+                    </b>
+                </p>
+
+                <button type="submit">
+                    Pesan via WhatsApp
+                </button>
+                <button
+                    type="button"
+                    class="abu"
+                    onclick="kembali()"
+                >
+                    Kembali
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script src="java.js"></script>
+
+</body>
+</html>
